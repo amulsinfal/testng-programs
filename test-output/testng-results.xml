@@ -1,38 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-12T15:07:03 IST" name="TestNG Test Suite" finished-at="2026-07-12T15:07:03 IST" duration-ms="184">
+  <suite started-at="2026-07-12T15:10:16 IST" name="TestNG Test Suite" finished-at="2026-07-12T15:10:16 IST" duration-ms="136">
     <groups>
-      <group name="Regression">
-        <method signature="LoginTest.testLoginWithValidCredentials()[pri:1, instance:testing.LoginTest@35d019a3]" name="testLoginWithValidCredentials" class="testing.LoginTest"/>
-        <method signature="LoginTest.testLoginWithInvalidCredentials()[pri:2, instance:testing.LoginTest@35d019a3]" name="testLoginWithInvalidCredentials" class="testing.LoginTest"/>
-        <method signature="LoginTest.testLoginWithBlankCredentials()[pri:3, instance:testing.LoginTest@35d019a3]" name="testLoginWithBlankCredentials" class="testing.LoginTest"/>
-        <method signature="LoginTest.testLoginWithLockedCredentials()[pri:4, instance:testing.LoginTest@35d019a3]" name="testLoginWithLockedCredentials" class="testing.LoginTest"/>
-      </group> <!-- Regression -->
-      <group name="Smoke">
-        <method signature="LoginTest.testLoginWithValidCredentials()[pri:1, instance:testing.LoginTest@35d019a3]" name="testLoginWithValidCredentials" class="testing.LoginTest"/>
-      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2026-07-12T15:07:03 IST" name="priority Test" finished-at="2026-07-12T15:07:03 IST" duration-ms="184">
-      <class name="testing.LoginTest">
-        <test-method signature="testLoginWithValidCredentials()[pri:1, instance:testing.LoginTest@35d019a3]" started-at="2026-07-12T15:07:03 IST" name="testLoginWithValidCredentials" description="Test Login With Valid Credentials" finished-at="2026-07-12T15:07:03 IST" duration-ms="25" status="PASS">
+    <test started-at="2026-07-12T15:10:16 IST" name="Annotation Order Test" finished-at="2026-07-12T15:10:16 IST" duration-ms="136">
+      <class name="testing.AnnotationOrderTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:testing.AnnotationOrderTest@3b69e7d1]" started-at="2026-07-12T15:10:16 IST" name="beforeSuite" finished-at="2026-07-12T15:10:16 IST" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginWithValidCredentials -->
-        <test-method signature="testLoginWithInvalidCredentials()[pri:2, instance:testing.LoginTest@35d019a3]" started-at="2026-07-12T15:07:03 IST" name="testLoginWithInvalidCredentials" description="Test Login With invalid Credentials" finished-at="2026-07-12T15:07:03 IST" duration-ms="15" status="PASS">
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testing.AnnotationOrderTest@3b69e7d1]" started-at="2026-07-12T15:10:16 IST" name="beforeTest" finished-at="2026-07-12T15:10:16 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginWithInvalidCredentials -->
-        <test-method signature="testLoginWithBlankCredentials()[pri:3, instance:testing.LoginTest@35d019a3]" started-at="2026-07-12T15:07:03 IST" name="testLoginWithBlankCredentials" description="Test Login With blank Credentials" finished-at="2026-07-12T15:07:03 IST" duration-ms="9" status="PASS">
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testing.AnnotationOrderTest@3b69e7d1]" started-at="2026-07-12T15:10:16 IST" name="beforeClass" finished-at="2026-07-12T15:10:16 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginWithBlankCredentials -->
-        <test-method signature="testLoginWithLockedCredentials()[pri:4, instance:testing.LoginTest@35d019a3]" started-at="2026-07-12T15:07:03 IST" name="testLoginWithLockedCredentials" description="Test Login With locked Credentials" finished-at="2026-07-12T15:07:03 IST" duration-ms="8" status="PASS">
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testing.AnnotationOrderTest@3b69e7d1]" started-at="2026-07-12T15:10:16 IST" name="beforeMethod" finished-at="2026-07-12T15:10:16 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginWithLockedCredentials -->
-      </class> <!-- testing.LoginTest -->
-    </test> <!-- priority Test -->
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testRegister()[pri:1, instance:testing.AnnotationOrderTest@3b69e7d1]" started-at="2026-07-12T15:10:16 IST" name="testRegister" finished-at="2026-07-12T15:10:16 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegister -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testing.AnnotationOrderTest@3b69e7d1]" started-at="2026-07-12T15:10:16 IST" name="afterMethod" finished-at="2026-07-12T15:10:16 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testing.AnnotationOrderTest@3b69e7d1]" started-at="2026-07-12T15:10:16 IST" name="beforeMethod" finished-at="2026-07-12T15:10:16 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testLogin()[pri:2, instance:testing.AnnotationOrderTest@3b69e7d1]" started-at="2026-07-12T15:10:16 IST" name="testLogin" finished-at="2026-07-12T15:10:16 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testing.AnnotationOrderTest@3b69e7d1]" started-at="2026-07-12T15:10:16 IST" name="afterMethod" finished-at="2026-07-12T15:10:16 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testing.AnnotationOrderTest@3b69e7d1]" started-at="2026-07-12T15:10:16 IST" name="beforeMethod" finished-at="2026-07-12T15:10:16 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testLogout()[pri:3, instance:testing.AnnotationOrderTest@3b69e7d1]" started-at="2026-07-12T15:10:16 IST" name="testLogout" finished-at="2026-07-12T15:10:16 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogout -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testing.AnnotationOrderTest@3b69e7d1]" started-at="2026-07-12T15:10:16 IST" name="afterMethod" finished-at="2026-07-12T15:10:16 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testing.AnnotationOrderTest@3b69e7d1]" started-at="2026-07-12T15:10:16 IST" name="afterClass" finished-at="2026-07-12T15:10:16 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testing.AnnotationOrderTest@3b69e7d1]" started-at="2026-07-12T15:10:16 IST" name="afterTest" finished-at="2026-07-12T15:10:16 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:testing.AnnotationOrderTest@3b69e7d1]" started-at="2026-07-12T15:10:16 IST" name="afterSuite" finished-at="2026-07-12T15:10:17 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- testing.AnnotationOrderTest -->
+    </test> <!-- Annotation Order Test -->
   </suite> <!-- TestNG Test Suite -->
 </testng-results>
