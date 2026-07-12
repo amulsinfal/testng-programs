@@ -2,27 +2,20 @@
 <testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-12T18:13:03 IST" name="TestNG Test Suite" finished-at="2026-07-12T18:13:03 IST" duration-ms="103">
+  <suite started-at="2026-07-12T18:17:22 IST" name="TestNG Test Suite" finished-at="2026-07-12T18:17:23 IST" duration-ms="101">
     <groups>
-      <group name="Regression">
-        <method signature="LoginTest.testLoginWithValidCredentials()[pri:1, instance:testing.LoginTest@313ac989]" name="testLoginWithValidCredentials" class="testing.LoginTest"/>
-        <method signature="LoginTest.testLoginWithInvalidCredentials()[pri:2, instance:testing.LoginTest@313ac989]" name="testLoginWithInvalidCredentials" class="testing.LoginTest"/>
-      </group> <!-- Regression -->
-      <group name="Smoke">
-        <method signature="LoginTest.testLoginWithValidCredentials()[pri:1, instance:testing.LoginTest@313ac989]" name="testLoginWithValidCredentials" class="testing.LoginTest"/>
-      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2026-07-12T18:13:03 IST" name="include method test" finished-at="2026-07-12T18:13:03 IST" duration-ms="103">
-      <class name="testing.LoginTest">
-        <test-method signature="testLoginWithValidCredentials()[pri:1, instance:testing.LoginTest@313ac989]" started-at="2026-07-12T18:13:03 IST" name="testLoginWithValidCredentials" description="Test Login With Valid Credentials" finished-at="2026-07-12T18:13:03 IST" duration-ms="17" status="PASS">
+    <test started-at="2026-07-12T18:17:22 IST" name="exclude property Test" finished-at="2026-07-12T18:17:23 IST" duration-ms="101">
+      <class name="testing.RegisterTest">
+        <test-method signature="testToRegisterWithValidCredentials()[pri:1, instance:testing.RegisterTest@35d019a3]" started-at="2026-07-12T18:17:23 IST" name="testToRegisterWithValidCredentials" description="Test to register With Valid credentials" finished-at="2026-07-12T18:17:23 IST" duration-ms="23" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginWithValidCredentials -->
-        <test-method signature="testLoginWithInvalidCredentials()[pri:2, instance:testing.LoginTest@313ac989]" started-at="2026-07-12T18:13:03 IST" name="testLoginWithInvalidCredentials" description="Test Login With invalid Credentials" finished-at="2026-07-12T18:13:03 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- testToRegisterWithValidCredentials -->
+        <test-method signature="testToRegisterWithInvalidCredentials()[pri:2, instance:testing.RegisterTest@35d019a3]" started-at="2026-07-12T18:17:23 IST" name="testToRegisterWithInvalidCredentials" description="Test to register With invalid credentials" finished-at="2026-07-12T18:17:23 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginWithInvalidCredentials -->
-      </class> <!-- testing.LoginTest -->
-    </test> <!-- include method test -->
+        </test-method> <!-- testToRegisterWithInvalidCredentials -->
+      </class> <!-- testing.RegisterTest -->
+    </test> <!-- exclude property Test -->
   </suite> <!-- TestNG Test Suite -->
 </testng-results>
