@@ -1,62 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="3" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-12T18:51:37 IST" name="TestNG Test Suite" finished-at="2026-07-12T18:51:37 IST" duration-ms="118">
+  <suite started-at="2026-07-12T19:00:28 IST" name="TestNG Test Suite" finished-at="2026-07-12T19:00:32 IST" duration-ms="4173">
     <groups>
     </groups>
-    <test started-at="2026-07-12T18:51:37 IST" name="HardAssertions Test" finished-at="2026-07-12T18:51:37 IST" duration-ms="118">
-      <class name="testing.LogoutTest">
-        <test-method signature="testToLoginWithValidCredentials()[pri:1, instance:testing.LogoutTest@55b699ef]" started-at="2026-07-12T18:51:37 IST" name="testToLoginWithValidCredentials" description="Test to login With valid credentials" finished-at="2026-07-12T18:51:37 IST" duration-ms="20" status="PASS">
+    <test started-at="2026-07-12T19:00:28 IST" name="timeout Test" finished-at="2026-07-12T19:00:32 IST" duration-ms="4173">
+      <class name="testing.SearchProductTest">
+        <test-method signature="testToSearchProductWithExistingProduct()[pri:1, instance:testing.SearchProductTest@689604d9]" started-at="2026-07-12T19:00:28 IST" name="testToSearchProductWithExistingProduct" description="Test Search Product With existing product" finished-at="2026-07-12T19:00:28 IST" duration-ms="22" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testToLoginWithValidCredentials -->
-        <test-method signature="testToLogoutFromApplication_HardAssertion()[pri:3, instance:testing.LogoutTest@55b699ef]" started-at="2026-07-12T18:51:37 IST" name="testToLogoutFromApplication_HardAssertion" description="Test logout from application." finished-at="2026-07-12T18:51:37 IST" duration-ms="21" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- testToSearchProductWithExistingProduct -->
+        <test-method signature="testToSearchProductWithNonExistingProduct()[pri:2, instance:testing.SearchProductTest@689604d9]" started-at="2026-07-12T19:00:28 IST" name="testToSearchProductWithNonExistingProduct" description="Test Search Product With non existing product" finished-at="2026-07-12T19:00:28 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testToSearchProductWithNonExistingProduct -->
+        <test-method signature="testToSearchProductWithBlankProductName()[pri:3, instance:testing.SearchProductTest@689604d9]" started-at="2026-07-12T19:00:28 IST" name="testToSearchProductWithBlankProductName" description="Test Search Product With blank product name" finished-at="2026-07-12T19:00:28 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testToSearchProductWithBlankProductName -->
+        <test-method signature="testToSearchProductWithInvalidProductName()[pri:4, instance:testing.SearchProductTest@689604d9]" started-at="2026-07-12T19:00:28 IST" name="testToSearchProductWithInvalidProductName" description="Test Search Product With invalid product name" finished-at="2026-07-12T19:00:32 IST" duration-ms="4025" status="FAIL">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
             <message>
-              <![CDATA[Home page title mismatch. expected [Home page] but found [HomePage]]]>
+              <![CDATA[Method testing.SearchProductTest.testToSearchProductWithInvalidProductName() didn't finish within the time-out 4000]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Home page title mismatch. expected [Home page] but found [HomePage]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at testing.LogoutTest.testToLogoutFromApplication_HardAssertion(LogoutTest.java:36)
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method testing.SearchProductTest.testToSearchProductWithInvalidProductName() didn't finish within the time-out 4000
+at java.base/java.lang.Thread.sleep0(Native Method)
+at java.base/java.lang.Thread.sleep(Thread.java:509)
+at testing.SearchProductTest.testToSearchProductWithInvalidProductName(SearchProductTest.java:29)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:744)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testToLogoutFromApplication_HardAssertion -->
-      </class> <!-- testing.LogoutTest -->
-    </test> <!-- HardAssertions Test -->
+        </test-method> <!-- testToSearchProductWithInvalidProductName -->
+      </class> <!-- testing.SearchProductTest -->
+    </test> <!-- timeout Test -->
   </suite> <!-- TestNG Test Suite -->
 </testng-results>

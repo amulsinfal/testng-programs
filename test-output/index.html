@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-TestNG_Test_Suite" class="navigator-link ">
-                    <span>C:\SoftwareTesting\Workspaces\core-java\eclipse-workspace\testng-programs\HardAssertion_testng.xml</span>
+                    <span>C:\SoftwareTesting\Workspaces\core-java\eclipse-workspace\testng-programs\timeout_testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-TestNG_Test_Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestNG_Test_Suite" title="testing.LogoutTest" class="method navigator-link" hash-for-method="testToLogoutFromApplication_HardAssertion">testToLogoutFromApplication_HardAssertion</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TestNG_Test_Suite" title="testing.SearchProductTest" class="method navigator-link" hash-for-method="testToSearchProductWithInvalidProductName">testToSearchProductWithInvalidProductName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-TestNG_Test_Suite -->
@@ -117,7 +117,17 @@
                     <div class="method-list-content passed suite-TestNG_Test_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestNG_Test_Suite" title="testing.LogoutTest" class="method navigator-link" hash-for-method="testToLoginWithValidCredentials">testToLoginWithValidCredentials</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TestNG_Test_Suite" title="testing.SearchProductTest" class="method navigator-link" hash-for-method="testToSearchProductWithBlankProductName">testToSearchProductWithBlankProductName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Test_Suite" title="testing.SearchProductTest" class="method navigator-link" hash-for-method="testToSearchProductWithExistingProduct">testToSearchProductWithExistingProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Test_Suite" title="testing.SearchProductTest" class="method navigator-link" hash-for-method="testToSearchProductWithNonExistingProduct">testToSearchProductWithNonExistingProduct</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-TestNG_Test_Suite -->
@@ -135,21 +145,26 @@
           <div class="suite-TestNG_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">testing.LogoutTest</span>
+              <span class="class-name">testing.SearchProductTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testToLogoutFromApplication_HardAssertion">
-                  </a> <!-- testToLogoutFromApplication_HardAssertion -->
-                  <span class="method-name">testToLogoutFromApplication_HardAssertion</span>
-                  <div class="stack-trace">java.lang.AssertionError: Home page title mismatch. expected [Home page] but found [HomePage]
-	at testing.LogoutTest.testToLogoutFromApplication_HardAssertion(LogoutTest.java:36)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 30 stack frames
+                  <a name="testToSearchProductWithInvalidProductName">
+                  </a> <!-- testToSearchProductWithInvalidProductName -->
+                  <span class="method-name">testToSearchProductWithInvalidProductName</span>
+                  <div class="stack-trace">org.testng.internal.thread.ThreadTimeoutException: Method testing.SearchProductTest.testToSearchProductWithInvalidProductName() didn&apos;t finish within the time-out 4000
+	at java.base/java.lang.Thread.sleep0(Native Method)
+	at java.base/java.lang.Thread.sleep(Thread.java:509)
+	at testing.SearchProductTest.testToSearchProductWithInvalidProductName(SearchProductTest.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 6 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(Test logout from application.)                  </em>
+(Test Search Product With invalid product name)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -157,16 +172,34 @@
           <div class="suite-TestNG_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testing.LogoutTest</span>
+              <span class="class-name">testing.SearchProductTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testToLoginWithValidCredentials">
-                  </a> <!-- testToLoginWithValidCredentials -->
-                  <span class="method-name">testToLoginWithValidCredentials</span>
+                  <a name="testToSearchProductWithBlankProductName">
+                  </a> <!-- testToSearchProductWithBlankProductName -->
+                  <span class="method-name">testToSearchProductWithBlankProductName</span>
                   <em>
-(Test to login With valid credentials)                  </em>
+(Test Search Product With blank product name)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testToSearchProductWithExistingProduct">
+                  </a> <!-- testToSearchProductWithExistingProduct -->
+                  <span class="method-name">testToSearchProductWithExistingProduct</span>
+                  <em>
+(Test Search Product With existing product)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testToSearchProductWithNonExistingProduct">
+                  </a> <!-- testToSearchProductWithNonExistingProduct -->
+                  <span class="method-name">testToSearchProductWithNonExistingProduct</span>
+                  <em>
+(Test Search Product With non existing product)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -174,22 +207,18 @@
         </div> <!-- panel TestNG_Test_Suite -->
         <div panel-name="test-xml-TestNG_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\SoftwareTesting\Workspaces\core-java\eclipse-workspace\testng-programs\HardAssertion_testng.xml</span>
+            <span class="header-content">C:\SoftwareTesting\Workspaces\core-java\eclipse-workspace\testng-programs\timeout_testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;TestNG Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;HardAssertions Test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;timeout Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testing.LogoutTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;exclude name=&quot;testToLogoutFromApplication_SoftAssertion&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- testing.LogoutTest --&gt;
+      &lt;class name=&quot;testing.SearchProductTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- HardAssertions Test --&gt;
+  &lt;/test&gt; &lt;!-- timeout Test --&gt;
 &lt;/suite&gt; &lt;!-- TestNG Test Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -201,7 +230,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">HardAssertions Test (1 class)</span>
+                <span class="test-name">timeout Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -227,20 +256,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testToLogoutFromApplication_HardAssertion')
-data.setCell(0, 2, 'testing.LogoutTest')
-data.setCell(0, 3, 21);
+data.setCell(0, 1, 'testToSearchProductWithInvalidProductName')
+data.setCell(0, 2, 'testing.SearchProductTest')
+data.setCell(0, 3, 4025);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testToLoginWithValidCredentials')
-data.setCell(1, 2, 'testing.LogoutTest')
-data.setCell(1, 3, 20);
+data.setCell(1, 1, 'testToSearchProductWithExistingProduct')
+data.setCell(1, 2, 'testing.SearchProductTest')
+data.setCell(1, 3, 22);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testToSearchProductWithBlankProductName')
+data.setCell(2, 2, 'testing.SearchProductTest')
+data.setCell(2, 3, 6);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testToSearchProductWithNonExistingProduct')
+data.setCell(3, 2, 'testing.SearchProductTest')
+data.setCell(3, 3, 5);
 window.suiteTableData['TestNG_Test_Suite']= { tableData: data, tableDiv: 'times-div-TestNG_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 41 ms</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-TestNG_Test_Suite">
               </div> <!-- times-div-TestNG_Test_Suite -->
             </div> <!-- times-div -->
@@ -255,16 +292,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-TestNG_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testing.LogoutTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">testToLogoutFromApplication_SoftAssertion</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-TestNG_Test_Suite" class="panel">
@@ -273,16 +303,24 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testing.LogoutTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testing.SearchProductTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">testToLoginWithValidCredentials</span>
+                <span class="method-name">testToSearchProductWithExistingProduct</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testToSearchProductWithNonExistingProduct</span>
+                <span class="method-start">32 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testToSearchProductWithBlankProductName</span>
+                <span class="method-start">53 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">testToLogoutFromApplication_HardAssertion</span>
-                <span class="method-start">41 ms</span>
+                <span class="method-name">testToSearchProductWithInvalidProductName</span>
+                <span class="method-start">69 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
