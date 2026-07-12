@@ -1,23 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="4" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-12T18:21:21 IST" name="TestNG Test Suite" finished-at="2026-07-12T18:21:21 IST" duration-ms="90">
+  <suite started-at="2026-07-12T18:23:00 IST" name="TestNG Test Suite" finished-at="2026-07-12T18:23:00 IST" duration-ms="116">
     <groups>
       <group name="Regression">
-        <method signature="LoginTest.testLoginWithValidCredentials()[pri:1, instance:testing.LoginTest@2a65fe7c]" name="testLoginWithValidCredentials" class="testing.LoginTest"/>
+        <method signature="LoginTest.testLoginWithInvalidCredentials()[pri:2, instance:testing.LoginTest@3023df74]" name="testLoginWithInvalidCredentials" class="testing.LoginTest"/>
+        <method signature="LoginTest.testLoginWithBlankCredentials()[pri:3, instance:testing.LoginTest@3023df74]" name="testLoginWithBlankCredentials" class="testing.LoginTest"/>
+        <method signature="LoginTest.testLoginWithLockedCredentials()[pri:4, instance:testing.LoginTest@3023df74]" name="testLoginWithLockedCredentials" class="testing.LoginTest"/>
       </group> <!-- Regression -->
-      <group name="Smoke">
-        <method signature="LoginTest.testLoginWithValidCredentials()[pri:1, instance:testing.LoginTest@2a65fe7c]" name="testLoginWithValidCredentials" class="testing.LoginTest"/>
-      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2026-07-12T18:21:21 IST" name="groups include Test" finished-at="2026-07-12T18:21:21 IST" duration-ms="90">
+    <test started-at="2026-07-12T18:23:00 IST" name="groups exclude Test" finished-at="2026-07-12T18:23:00 IST" duration-ms="116">
       <class name="testing.LoginTest">
-        <test-method signature="testLoginWithValidCredentials()[pri:1, instance:testing.LoginTest@2a65fe7c]" started-at="2026-07-12T18:21:21 IST" name="testLoginWithValidCredentials" description="Test Login With Valid Credentials" finished-at="2026-07-12T18:21:21 IST" duration-ms="20" status="PASS">
+        <test-method signature="testLoginWithInvalidCredentials()[pri:2, instance:testing.LoginTest@3023df74]" started-at="2026-07-12T18:23:00 IST" name="testLoginWithInvalidCredentials" description="Test Login With invalid Credentials" finished-at="2026-07-12T18:23:00 IST" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginWithValidCredentials -->
+        </test-method> <!-- testLoginWithInvalidCredentials -->
+        <test-method signature="testLoginWithBlankCredentials()[pri:3, instance:testing.LoginTest@3023df74]" started-at="2026-07-12T18:23:00 IST" name="testLoginWithBlankCredentials" description="Test Login With blank Credentials" finished-at="2026-07-12T18:23:00 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithBlankCredentials -->
+        <test-method signature="testLoginWithLockedCredentials()[pri:4, instance:testing.LoginTest@3023df74]" started-at="2026-07-12T18:23:00 IST" name="testLoginWithLockedCredentials" description="Test Login With locked Credentials" finished-at="2026-07-12T18:23:00 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithLockedCredentials -->
       </class> <!-- testing.LoginTest -->
-    </test> <!-- groups include Test -->
+    </test> <!-- groups exclude Test -->
   </suite> <!-- TestNG Test Suite -->
 </testng-results>
