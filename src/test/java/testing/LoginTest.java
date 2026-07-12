@@ -1,6 +1,8 @@
 package testing;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
 public class LoginTest {
 
 	@Test(priority = 1, groups = { "Smoke", "Regression" }, 
