@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-TestNG_Test_Suite" class="navigator-link ">
-                    <span>C:\SoftwareTesting\Workspaces\core-java\eclipse-workspace\testng-programs\excludeMethods_testng.xml</span>
+                    <span>C:\SoftwareTesting\Workspaces\core-java\eclipse-workspace\testng-programs\groups_include_testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-TestNG_Test_Suite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,12 +103,7 @@
                     <div class="method-list-content passed suite-TestNG_Test_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestNG_Test_Suite" title="testing.RegisterTest" class="method navigator-link" hash-for-method="testToRegisterWithInvalidCredentials">testToRegisterWithInvalidCredentials</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestNG_Test_Suite" title="testing.RegisterTest" class="method navigator-link" hash-for-method="testToRegisterWithValidCredentials">testToRegisterWithValidCredentials</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TestNG_Test_Suite" title="testing.LoginTest" class="method navigator-link" hash-for-method="testLoginWithValidCredentials">testLoginWithValidCredentials</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-TestNG_Test_Suite -->
@@ -126,25 +121,16 @@
           <div class="suite-TestNG_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testing.RegisterTest</span>
+              <span class="class-name">testing.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testToRegisterWithInvalidCredentials">
-                  </a> <!-- testToRegisterWithInvalidCredentials -->
-                  <span class="method-name">testToRegisterWithInvalidCredentials</span>
+                  <a name="testLoginWithValidCredentials">
+                  </a> <!-- testLoginWithValidCredentials -->
+                  <span class="method-name">testLoginWithValidCredentials</span>
                   <em>
-(Test to register With invalid credentials)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testToRegisterWithValidCredentials">
-                  </a> <!-- testToRegisterWithValidCredentials -->
-                  <span class="method-name">testToRegisterWithValidCredentials</span>
-                  <em>
-(Test to register With Valid credentials)                  </em>
+(Test Login With Valid Credentials)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -152,23 +138,28 @@
         </div> <!-- panel TestNG_Test_Suite -->
         <div panel-name="test-xml-TestNG_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\SoftwareTesting\Workspaces\core-java\eclipse-workspace\testng-programs\excludeMethods_testng.xml</span>
+            <span class="header-content">C:\SoftwareTesting\Workspaces\core-java\eclipse-workspace\testng-programs\groups_include_testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;TestNG Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;exclude property Test&quot;&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;Smoke&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;Smoke&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;groups include Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testing.RegisterTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;exclude name=&quot;testToRegisterWithBlankCredentials&quot;/&gt;
-          &lt;exclude name=&quot;testToRegisterWithExistingCredntials&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- testing.RegisterTest --&gt;
+      &lt;class name=&quot;testing.LoginTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- exclude property Test --&gt;
+  &lt;/test&gt; &lt;!-- groups include Test --&gt;
 &lt;/suite&gt; &lt;!-- TestNG Test Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -180,7 +171,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">exclude property Test (1 class)</span>
+                <span class="test-name">groups include Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -190,6 +181,22 @@
             <span class="header-content">Groups for TestNG Test Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testLoginWithValidCredentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testLoginWithValidCredentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-TestNG_Test_Suite" class="panel">
@@ -206,20 +213,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testToRegisterWithValidCredentials')
-data.setCell(0, 2, 'testing.RegisterTest')
-data.setCell(0, 3, 23);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testToRegisterWithInvalidCredentials')
-data.setCell(1, 2, 'testing.RegisterTest')
-data.setCell(1, 3, 5);
+data.setCell(0, 1, 'testLoginWithValidCredentials')
+data.setCell(0, 2, 'testing.LoginTest')
+data.setCell(0, 3, 20);
 window.suiteTableData['TestNG_Test_Suite']= { tableData: data, tableDiv: 'times-div-TestNG_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 28 ms</span>
+              <span class="suite-total-time">Total running time: 20 ms</span>
               <div id="times-div-TestNG_Test_Suite">
               </div> <!-- times-div-TestNG_Test_Suite -->
             </div> <!-- times-div -->
@@ -234,15 +237,17 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-TestNG_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">testing.RegisterTest</span>
+              <span class="ignored-class-name">testing.LoginTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">testToRegisterWithBlankCredentials</span>
+                <span class="ignored-method-name">testLoginWithBlankCredentials</span>
                 <br/>
-                <span class="ignored-method-name">testToRegisterWithExistingCredentials</span>
+                <span class="ignored-method-name">testLoginWithLockedCredentials</span>
+                <br/>
+                <span class="ignored-method-name">testLoginWithInvalidCredentials</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -254,14 +259,10 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testing.RegisterTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testing.LoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">testToRegisterWithValidCredentials</span>
+                <span class="method-name">testLoginWithValidCredentials</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testToRegisterWithInvalidCredentials</span>
-                <span class="method-start">39 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
