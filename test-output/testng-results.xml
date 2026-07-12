@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-07-12T15:07:03 IST" name="TestNG Test Suite" finished-at="2026-07-12T15:07:03 IST" duration-ms="184">
+    <groups>
+      <group name="Regression">
+        <method signature="LoginTest.testLoginWithValidCredentials()[pri:1, instance:testing.LoginTest@35d019a3]" name="testLoginWithValidCredentials" class="testing.LoginTest"/>
+        <method signature="LoginTest.testLoginWithInvalidCredentials()[pri:2, instance:testing.LoginTest@35d019a3]" name="testLoginWithInvalidCredentials" class="testing.LoginTest"/>
+        <method signature="LoginTest.testLoginWithBlankCredentials()[pri:3, instance:testing.LoginTest@35d019a3]" name="testLoginWithBlankCredentials" class="testing.LoginTest"/>
+        <method signature="LoginTest.testLoginWithLockedCredentials()[pri:4, instance:testing.LoginTest@35d019a3]" name="testLoginWithLockedCredentials" class="testing.LoginTest"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="LoginTest.testLoginWithValidCredentials()[pri:1, instance:testing.LoginTest@35d019a3]" name="testLoginWithValidCredentials" class="testing.LoginTest"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2026-07-12T15:07:03 IST" name="priority Test" finished-at="2026-07-12T15:07:03 IST" duration-ms="184">
+      <class name="testing.LoginTest">
+        <test-method signature="testLoginWithValidCredentials()[pri:1, instance:testing.LoginTest@35d019a3]" started-at="2026-07-12T15:07:03 IST" name="testLoginWithValidCredentials" description="Test Login With Valid Credentials" finished-at="2026-07-12T15:07:03 IST" duration-ms="25" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithValidCredentials -->
+        <test-method signature="testLoginWithInvalidCredentials()[pri:2, instance:testing.LoginTest@35d019a3]" started-at="2026-07-12T15:07:03 IST" name="testLoginWithInvalidCredentials" description="Test Login With invalid Credentials" finished-at="2026-07-12T15:07:03 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithInvalidCredentials -->
+        <test-method signature="testLoginWithBlankCredentials()[pri:3, instance:testing.LoginTest@35d019a3]" started-at="2026-07-12T15:07:03 IST" name="testLoginWithBlankCredentials" description="Test Login With blank Credentials" finished-at="2026-07-12T15:07:03 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithBlankCredentials -->
+        <test-method signature="testLoginWithLockedCredentials()[pri:4, instance:testing.LoginTest@35d019a3]" started-at="2026-07-12T15:07:03 IST" name="testLoginWithLockedCredentials" description="Test Login With locked Credentials" finished-at="2026-07-12T15:07:03 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithLockedCredentials -->
+      </class> <!-- testing.LoginTest -->
+    </test> <!-- priority Test -->
+  </suite> <!-- TestNG Test Suite -->
+</testng-results>
