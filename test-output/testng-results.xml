@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="4" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-12T18:00:06 IST" name="TestNG Test Suite" finished-at="2026-07-12T18:00:06 IST" duration-ms="109">
+  <suite started-at="2026-07-12T18:06:39 IST" name="TestNG Test Suite" finished-at="2026-07-12T18:06:39 IST" duration-ms="135">
     <groups>
     </groups>
-    <test started-at="2026-07-12T18:00:06 IST" name="enabled property Test" finished-at="2026-07-12T18:00:06 IST" duration-ms="109">
-      <class name="testing.RegisterTest">
-        <test-method signature="testToRegisterWithValidCredentials()[pri:1, instance:testing.RegisterTest@35d019a3]" started-at="2026-07-12T18:00:06 IST" name="testToRegisterWithValidCredentials" description="Test to register With Valid credentials" finished-at="2026-07-12T18:00:06 IST" duration-ms="15" status="PASS">
+    <test started-at="2026-07-12T18:06:39 IST" name="invocationCount Test" finished-at="2026-07-12T18:06:39 IST" duration-ms="135">
+      <class name="testing.ProductsTest">
+        <test-method signature="testToVerifyProductName()[pri:1, instance:testing.ProductsTest@35d019a3]" started-at="2026-07-12T18:06:39 IST" name="testToVerifyProductName" description="Test to verify product name." finished-at="2026-07-12T18:06:39 IST" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testToRegisterWithValidCredentials -->
-        <test-method signature="testToRegisterWithInvalidCredentials()[pri:2, instance:testing.RegisterTest@35d019a3]" started-at="2026-07-12T18:00:06 IST" name="testToRegisterWithInvalidCredentials" description="Test to register With invalid credentials" finished-at="2026-07-12T18:00:06 IST" duration-ms="4" status="PASS">
+        </test-method> <!-- testToVerifyProductName -->
+        <test-method signature="testToVerifyProductDescription()[pri:2, instance:testing.ProductsTest@35d019a3]" started-at="2026-07-12T18:06:39 IST" name="testToVerifyProductDescription" description="Test to verify product description." finished-at="2026-07-12T18:06:39 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testToRegisterWithInvalidCredentials -->
-        <test-method signature="testToRegisterWithBlankCredentials()[pri:3, instance:testing.RegisterTest@35d019a3]" started-at="2026-07-12T18:00:06 IST" name="testToRegisterWithBlankCredentials" description="Test to register With blank credentials" finished-at="2026-07-12T18:00:06 IST" duration-ms="5" status="PASS">
+        </test-method> <!-- testToVerifyProductDescription -->
+        <test-method signature="testToVerifyProductPrice()[pri:3, instance:testing.ProductsTest@35d019a3]" started-at="2026-07-12T18:06:39 IST" name="testToVerifyProductPrice" description="Test to verify product Price." finished-at="2026-07-12T18:06:39 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testToRegisterWithBlankCredentials -->
-      </class> <!-- testing.RegisterTest -->
-    </test> <!-- enabled property Test -->
+        </test-method> <!-- testToVerifyProductPrice -->
+        <test-method signature="testToVerifyProductCount()[pri:4, instance:testing.ProductsTest@35d019a3]" started-at="2026-07-12T18:06:39 IST" name="testToVerifyProductCount" description="Test to verify product count." finished-at="2026-07-12T18:06:39 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testToVerifyProductCount -->
+        <test-method signature="testToVerifyProductCount()[pri:4, instance:testing.ProductsTest@35d019a3]" started-at="2026-07-12T18:06:39 IST" name="testToVerifyProductCount" description="Test to verify product count." finished-at="2026-07-12T18:06:39 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testToVerifyProductCount -->
+        <test-method signature="testToVerifyProductCount()[pri:4, instance:testing.ProductsTest@35d019a3]" started-at="2026-07-12T18:06:39 IST" name="testToVerifyProductCount" description="Test to verify product count." finished-at="2026-07-12T18:06:39 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testToVerifyProductCount -->
+      </class> <!-- testing.ProductsTest -->
+    </test> <!-- invocationCount Test -->
   </suite> <!-- TestNG Test Suite -->
 </testng-results>
