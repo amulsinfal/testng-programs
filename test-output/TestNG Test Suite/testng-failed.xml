@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [TestNG Test Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="timeout Test(failed)">
+<suite parallel="methods" name="Failed suite [TestNG Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="methods" name="Methods in Parallel(failed)">
     <classes>
-      <class name="testing.SearchProductTest">
+      <class name="testing.ParallelTesting1">
         <methods>
-          <include name="testToSearchProductWithInvalidProductName"/>
+          <include name="verifyURL"/>
         </methods>
-      </class> <!-- testing.SearchProductTest -->
+      </class> <!-- testing.ParallelTesting1 -->
     </classes>
-  </test> <!-- timeout Test(failed) -->
+  </test> <!-- Methods in Parallel(failed) -->
+  <test thread-count="5" parallel="methods" name="Methods in Parallel 2(failed)">
+    <classes>
+      <class name="testing.ParallelTesting2">
+        <methods>
+          <include name="verifyURL"/>
+        </methods>
+      </class> <!-- testing.ParallelTesting2 -->
+    </classes>
+  </test> <!-- Methods in Parallel 2(failed) -->
 </suite> <!-- Failed suite [TestNG Test Suite] -->
