@@ -14,3 +14,4 @@
 12. [**HardAssertions**](https://github.com/amulsinfal/testng-programs/blob/main/HardAssertion_testng.xml)  
 13. [**Parameters**](https://github.com/amulsinfal/testng-programs/blob/main/parameters_testng.xml)  
 14. [**Cross Browser Testing**](https://github.com/amulsinfal/testng-programs/blob/main/cross_browser_testng.xml)  
+15. [**DataProviders**](https://github.com/amulsinfal/testng-programs/blob/main/dataprovider_testng.xml)  
