@@ -1,19 +1,16 @@
 package testing;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.Test;
-
 public class ReadDataFromExcelFile {
-
 	@Test
 	public void getExcelLoginData() {
-		String excelFile = System.getProperty("user.dir") + "\\src\\test\\resources\\TestData.xlsx";
+		String excelFile = System.getProperty("user.dir") + 
+				"\\src\\test\\resources\\TestData.xlsx";
 		FileInputStream fis;
 		XSSFWorkbook workbook = null;
 		try {
