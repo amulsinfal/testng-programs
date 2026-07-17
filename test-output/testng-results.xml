@@ -1,17 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="4" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-16T08:50:28 IST" name="Default suite" finished-at="2026-07-16T08:50:28 IST" duration-ms="110">
+  <suite started-at="2026-07-17T09:43:47 IST" name="Default suite" finished-at="2026-07-17T09:43:49 IST" duration-ms="1729">
     <groups>
     </groups>
-    <test started-at="2026-07-16T08:50:28 IST" name="Default test" finished-at="2026-07-16T08:50:28 IST" duration-ms="110">
-      <class name="testing.PropertiesReaderExample">
-        <test-method signature="readValuesFromPropertiesFile()[pri:0, instance:testing.PropertiesReaderExample@145f66e3]" started-at="2026-07-16T08:50:28 IST" name="readValuesFromPropertiesFile" finished-at="2026-07-16T08:50:28 IST" duration-ms="31" status="PASS">
+    <test started-at="2026-07-17T09:43:47 IST" name="Default test" finished-at="2026-07-17T09:43:49 IST" duration-ms="1729">
+      <class name="testing.DataProviderExample">
+        <test-method signature="verifyMessage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testing.DataProviderExample@76505305]" started-at="2026-07-17T09:43:49 IST" name="verifyMessage" data-provider="excelLoginData" finished-at="2026-07-17T09:43:49 IST" duration-ms="34" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ValidUser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ValidPass]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Login Successful]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- readValuesFromPropertiesFile -->
-      </class> <!-- testing.PropertiesReaderExample -->
+        </test-method> <!-- verifyMessage -->
+        <test-method signature="verifyMessage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testing.DataProviderExample@76505305]" started-at="2026-07-17T09:43:49 IST" name="verifyMessage" data-provider="excelLoginData" finished-at="2026-07-17T09:43:49 IST" duration-ms="13" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[InvalidUser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[InvalidPass]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Incorrect Crendentials]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMessage -->
+        <test-method signature="verifyMessage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testing.DataProviderExample@76505305]" started-at="2026-07-17T09:43:49 IST" name="verifyMessage" data-provider="excelLoginData" finished-at="2026-07-17T09:43:49 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LockedUser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ValidPass]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[User locked out.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMessage -->
+      </class> <!-- testing.DataProviderExample -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
